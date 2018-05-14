@@ -22,13 +22,13 @@ This project contains a handful of examples to illustrate some of its capabiliti
 
 Give 2 integer numbers A and B, the following 5 operations are performed:
 
-`
+```
   sum  = A + B
   sub  = A - B
   div  = A / B
   prod = A * B
   total = sum + sub + div + prod
-`
+```
 
 This example contains two error:
 * **sum** is printed on screen when **sub** is expected (demostrate how to look for bugs)
