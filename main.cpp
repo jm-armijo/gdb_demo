@@ -10,8 +10,12 @@ int main(int argc, char * argv[])
 {
     assert(argc == 2);
     int demo_id = std::atoi(argv[1]);
-    std::function<void(int,int)> f;
 
+    std::cout << "Enter two integer values:" << std::endl;
+    int a, b;
+    std::cin >> a >> b;
+
+    std::function<void(int,int)> f;
     switch (demo_id) {
         case 1: {
             f = demo_gdb::demo1;
@@ -26,10 +30,6 @@ int main(int argc, char * argv[])
             break;
         }
     }
-
-    std::cout << "Enter two integer values:" << std::endl;
-    int a, b;
-    std::cin >> a >> b;
 
     f(a,b);
 
