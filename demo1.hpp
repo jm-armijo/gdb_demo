@@ -1,12 +1,20 @@
 #include <iostream>
 
 namespace demo_gdb {
+    int add(int a, int b)
+    {
+        int result {0};
+        result += a;
+        result += b;
+        return result;
+    }
+
     void demo1(int a, int b)
     {
         int sum, sub, div, prod;
         long total = 0;
 
-        sum = a + b;
+        sum = add(a, b);
         sub = a - b;
         div = a / b;
         prod = a * b;
