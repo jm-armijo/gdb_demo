@@ -5,7 +5,7 @@ CXX = g++
 run: main.o
 	$(CXX) $(CXXFLAGS) -o run main.o
 
-main.o: main.cpp demo1.cpp
+main.o: main.cpp
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
 clean:
