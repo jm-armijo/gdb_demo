@@ -1,4 +1,4 @@
-CXXFLAGS = -std=c++11 -pedantic -Werror -Wall -I. -g
+CXXFLAGS = -std=c++11 -pedantic -Werror -Wall -static -I. -g
 
 CXX = g++
 
